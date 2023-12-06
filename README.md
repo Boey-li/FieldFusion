@@ -111,8 +111,8 @@ Use `--rendered-output-names accumulation` to render foreground accumulation mas
 ./externel/blender/blender -b -E CYCLES -P ./scripts/shadow_render.py 
 ```
 
-### 2.6 Compose the scene
-- Given the RGB images of the foreground object and background scene, shadow and the foreground accumulation mask, compose the scene.
+### 2.6 Compose the final results
+- Given the RGB images of the foreground object and background scene, shadow and the foreground accumulation mask, compose the images to get the final results.
 
 ```shell
 python scripts/compose.py \
