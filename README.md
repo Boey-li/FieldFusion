@@ -35,6 +35,8 @@ tar -xvf blender-2.93.0-linux-x64.tar.xz
 ###  1.4. Install nerfstudio Addon `scripts/nerfstudio_addon.py` in Blender 
 - According to [nerfstudio tutorial](https://docs.nerf.studio/extensions/blender_addon.html)
 
+## Pipeline Overview
+![pipeline](/assets/pipeline.png)
 
 ## 2. Usage
 
