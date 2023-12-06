@@ -1,0 +1,7 @@
+[submodule "model/nerfstudio"]
+	path = model/nerfstudio
+	url = git@github.com:nerfstudio-project/nerfstudio.git
+	branch = gaussian-splatting
+[submodule "model/TensoIR"]
+	path = model/TensoIR
+	url = git@github.com:Haian-Jin/TensoIR.git
