@@ -53,7 +53,7 @@ MODEL= <nerfacto/gaussian-splatting>
 
 DATA=colmap
 SCENE_NAME=<INPUT_YOUR_SCENE_NAME>
-DATA_DIR=./data/background/$SCENE_NAME/
+DATA_DIR=./data/<background/foreground>/$SCENE_NAME/
 EXP_NAME=$MODEL-$SCENE_NAME
 
 ns-train $MODEL \
@@ -77,12 +77,12 @@ ns-export poisson \
     --output-dir <OUTPUT_DIR> \
     --normal-method open3d \
     --remove-outliers True \
-    --obb-center FLOAT FLOAT FLOAT \
-    --obb-rotation FLOAT FLOAT FLOAT \
-    --obb-scale FLOAT FLOAT FLOAT
+    --obb-center <FLOAT FLOAT FLOAT> \
+    --obb-rotation <FLOAT FLOAT FLOAT> \
+    --obb-scale <FLOAT FLOAT FLOAT>
 ```
 
-You can crop the foreground object with `ns-viewer`
+You can crop the foreground object with `ns-viewer` to get the `obb-center`, `obb-rotation` and `obb-scale`
 
 ### 2.3 Open Blender to align the foreground object and background scene
 ![blender](/assets/blender.png)
