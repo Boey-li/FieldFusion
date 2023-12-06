@@ -1,6 +1,6 @@
 # FieldsFusion: Harmonious Radiance Fields Composition
 
-FieldsFusion is a project focused on advancing the field of 3D object and scene composition, with a particular emphasis on composition of radiance fields like NeRF and 3D Gaussian splatting. 
+FieldsFusion is a project focused on advancing the field of 3D object and scene composition, with a particular emphasis on composition of radiance fields like NeRF and 3D Gaussian splatting.   
 Our goal is to seamlessly integrate foreground objects with background scenes, both reconstructed from radiance fields, to facilitate high-fidelity rendering and composition. 
   
 
