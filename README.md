@@ -124,7 +124,7 @@ python scripts/compose.py \
 ```
 
 ## License
-Non-commercial use only.
+Non-commercial use only. 
 Donnot use this code for commercial purposes. Please contact us if you want to use it for commercial purposes.
 
 
