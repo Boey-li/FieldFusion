@@ -126,7 +126,6 @@ python scripts/compose.py \
 ```
 
 ## License
-Non-commercial use only. 
-Donnot use this code for commercial purposes. Please contact us if you want to use it for commercial purposes.
-
+This is an open access article distributed under the terms of the CC-BY-NC-ND license
+Donnot use this code for commercial purposes. 
 
