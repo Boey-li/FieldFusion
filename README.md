@@ -98,7 +98,7 @@ ns-render camera-path \
     --load-config <Foreground / Background config> \
     --output-format images \
     --output-path <Your Save Path> \
-    --camera-path-filename $3 \
+    --camera-path-filename <Exported Camera Path> \
     # --rendered-output-names accumulation 
 ```
 
