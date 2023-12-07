@@ -47,8 +47,13 @@ tar -xvf blender-2.93.0-linux-x64.tar.xz
 - The data should be in the form of a set of images and camera poses.
 - Refer to [nerfstudio data preparation](https://docs.nerf.studio/quickstart/custom_dataset.html) for more details.
 
-### 2.1.2(Optional) Invserse Rendering with Relighting
-- Run the Rendering with a pre-trained model under learned lighting condition, refer to [TensoIR](https://github.com/Haian-Jin/TensoIR) for more details.
+### 2.1.2 (Optional) Invserse Rendering with Relighting
+- We apply [TensoIR](https://github.com/Haian-Jin/TensoIR) for relighting and please refer to it for more details. Thanks for its great work! 
+- First train the foreground images using the `train_tensoIR_simple.py` function to get the checkpoint. 
+```shell
+export PYTHONPATH=. && python train_tensoIR_simple.py --config ./configs/single_light/blender.txt
+```
+- Then rendering with a pre-trained model under unseen lighting conditions. 
 ```shell
 export PYTHONPATH=. && python scripts/relight_importance.py --ckpt "$ckpt_path" --config configs/relighting_test/"$scene".txt --batch_size 800
 ```
