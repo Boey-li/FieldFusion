@@ -50,7 +50,7 @@ tar -xvf blender-2.93.0-linux-x64.tar.xz
 ### 2.1.2(Optional) Invserse Rendering with Relighting
 - Run the Rendering with a pre-trained model under learned lighting condition, refer to [TensoIR](https://github.com/Haian-Jin/TensoIR) for more details.
 ```shell
-export PYTHONPATH=. && python "$training_file" --config "$config_path" --ckpt "$ckpt_path" --render_only 1 --render_test 1
+export PYTHONPATH=. && python scripts/relight_importance.py --ckpt "$ckpt_path" --config configs/relighting_test/"$scene".txt --batch_size 800
 ```
 
 ### 2.2 Run the reconstruction pipeline
