@@ -22,7 +22,8 @@ pip install -r requirements.txt
 pip install -e .
 
 cd model/TensoIR
-# Install TensoIR
+pip install torch==1.10 torchvision
+pip install tqdm scikit-image opencv-python configargparse lpips imageio-ffmpeg kornia lpips tensorboard loguru plyfile
 ```
 
 ###  1.3. Put Blender into externel/
@@ -45,6 +46,12 @@ tar -xvf blender-2.93.0-linux-x64.tar.xz
 - Prepare the data for the foreground object and background scene separately.
 - The data should be in the form of a set of images and camera poses.
 - Refer to [nerfstudio data preparation](https://docs.nerf.studio/quickstart/custom_dataset.html) for more details.
+
+### 2.1.2(Optional) Invserse Rendering with Relighting
+- Run the Rendering with a pre-trained model under learned lighting condition, refer to [TensoIR](https://github.com/Haian-Jin/TensoIR) for more details.
+```shell
+export PYTHONPATH=. && python "$training_file" --config "$config_path" --ckpt "$ckpt_path" --render_only 1 --render_test 1
+```
 
 ### 2.2 Run the reconstruction pipeline
 - Run the reconstruction pipeline for the foreground object and background scene separately.
