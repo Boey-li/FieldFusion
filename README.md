@@ -53,7 +53,7 @@ tar -xvf blender-2.93.0-linux-x64.tar.xz
 ```shell
 export PYTHONPATH=. && python train_tensoIR_simple.py --config ./configs/single_light/blender.txt
 ```
-- Then rendering with a pre-trained model under unseen lighting conditions. 
+- Then render with a pre-trained model under unseen lighting conditions. 
 ```shell
 export PYTHONPATH=. && python scripts/relight_importance.py --ckpt "$ckpt_path" --config configs/relighting_test/"$scene".txt --batch_size 800
 ```
